@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name= "tb_game")
-public class Game {
+public class GameEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,9 +31,9 @@ public class Game {
 	@Column (columnDefinition = "TEXT")
 	private String longDescription;
 	
-	public Game() {}
+	public GameEntity() {}
 
-	public Game(Long id, String title, Integer year, String genre, String platforms, Double score,
+	public GameEntity(Long id, String title, Integer year, String genre, String platforms, Double score,
 			String imgUrl, String shortDescription, String longDescription) {
 		this.id = id;
 		this.title = title;
@@ -131,7 +131,7 @@ public class Game {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Game other = (Game) obj;
+		GameEntity other = (GameEntity) obj;
 		return Objects.equals(id, other.id);
 	}
 	
