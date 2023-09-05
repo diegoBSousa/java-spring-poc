@@ -21,7 +21,7 @@ public class GameController {
 	
 	@GetMapping
 	public List<GameMinDTO> findAll() {
-		List<GameMinDTO> gameMinDTOList = gameService.findAll(); // Modify service signature
+		List<GameMinDTO> gameMinDTOList = gameService.findAll();
 		return gameMinDTOList;
 	}
 	
