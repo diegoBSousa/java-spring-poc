@@ -2,7 +2,7 @@
 
 ## Modelo de domínio DSList
 
-![Modelo de domínio DSList](https://raw.githubusercontent.com/diegoBSousa/java-spring-poc/dslist-model.png)
+![Modelo de domínio DSList](https://github.com/diegoBSousa/java-spring-poc/blob/63d71a47e8865cadba37f1f1f8e9a4ca36fbd11d/dslist-model.png)
 
 ## Trechos de código
 
